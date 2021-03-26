@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "../css/landing.scss";
 import { NavLink } from "react-router-dom";
-import Slider from "react-slic";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -16,7 +16,7 @@ function Landing() {
     }
     }, 5000);
 
-
+}
 
 const images = [
     {
