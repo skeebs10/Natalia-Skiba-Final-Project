@@ -1,10 +1,10 @@
 import { Switch, Route } from "react-router";
-import About from "./compnents/About";
-import Cart from "./compnents/Cart";
-import Contact from "./compnents/Contact";
-import Landing from "./compnents/Landing";
-import Product from "./compnents/Product";
-import Shop from "./compnents/Shop";
+import About from "./components/About";
+import Cart from "./components/Cart";
+import Contact from "./components/Contact";
+import Landing from "./components/Landing";
+import Product from "./components/Product";
+import Shop from "./components/Shop";
 
 function App() {
   return (

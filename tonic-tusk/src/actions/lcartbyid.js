@@ -3,7 +3,7 @@ import axios from "axios";
 export const Getlcart = (Cid) => {
     return async (dispatch) => {
     dispatch({ type: GetlcartbyidConstants.GetlcartbyidRequest });
-    await axios.get(`http://localhost:8080/lcartbyid/${Cid}`).then((res) => {
+    await axios.get(`http://localhost:8000/lcartbyid/${Cid}`).then((res) => {
         if (res.status === 201) {
         const { item } = res.data;
         dispatch({

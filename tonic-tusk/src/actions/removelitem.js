@@ -4,7 +4,7 @@ export const removelitem = (item) => {
     return async (dispatch) => {
     dispatch({ type: RemovelitemConstants.RemovelitemRequest });
     await axios
-        .post("http://localhost:8080/deletelItem", { ...item })
+        .post("http://localhost:8000/deletelItem", { ...item })
         .then((res) => {
         if (res.status === 201) {
             const { message } = res.data;

@@ -5,7 +5,7 @@ exports.createProduct = (req, res) => {
     let productImage = [];
     if (req.files.length > 0) {
     productImage = req.files.map((file) => {
-        return { img: "http://localhost:8080/public/" + file.filename };
+        return { img: "http://localhost:8000/public/" + file.filename };
     });
     }
     if (!name || !productImage || !price || !description) {

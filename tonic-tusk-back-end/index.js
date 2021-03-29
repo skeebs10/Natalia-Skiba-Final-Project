@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose
-    .connect("mongodb+srv://skeebs10:Klarnet#10@cluster0.9yvku.mongodb.net/Tonic-Tusk?retryWrites=true&w=majority", {
+    .connect("mongodb+srv://natalia:L4jAjfgEGkt0mAYO@cluster0.9yvku.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

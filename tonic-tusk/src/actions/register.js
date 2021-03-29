@@ -4,7 +4,7 @@ import Axios from "axios";
 export const Registers = (user1) => {
     return async (dispatch) => {
     dispatch({ type: RegisterConstants.RegisterRequest });
-    await Axios.post("http://localhost:8080/register", { ...user1 })
+    await Axios.post("http://localhost:8000/register", { ...user1 })
         .then((res) => {
         if (res.status === 201) {
             const { message } = res.data;
