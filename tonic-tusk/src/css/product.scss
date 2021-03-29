@@ -1,0 +1,271 @@
+.product__container {
+    display: flex;
+    .image__container {
+        height: 674px;
+
+        .lk {
+        height: 550px;
+        width: 450px;
+        }
+        @keyframes fadein {
+        0% {
+            opacity: 0;
+            transform: scale(0.2);
+        }
+        50% {
+            opacity: 0.5;
+            transform: scale(0.5);
+        }
+        75% {
+            opacity: 0.75;
+            transform: scale(0.7);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+        .toggleIn {
+        animation: fadein 300ms;
+        opacity: 1;
+        }
+        .above_images {
+        display: flex;
+        .below_images {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-right: 8px;
+            .below_img {
+            width: 100%;
+            height: 100%;
+            }
+        }
+        }
+    }
+    .content_container {
+        margin-left: 50px;
+
+        width: 60%;
+        height: 600px;
+        .title {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        font-weight: bold;
+        }
+        .reviews {
+        margin-left: 10px;
+        margin-top: 4px;
+        }
+        .price {
+        font-size: 20px;
+        margin-top: -10px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        }
+        .quantity {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-top: 20px;
+        }
+        .inputs {
+        border: 1px solid #cecece;
+        width: 40px;
+        height: 38px;
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-top: 15px;
+        padding-left: 13px;
+        }
+        .cart {
+        color: white;
+        background-color: #0094c6;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        padding: 10px 240px 10px 240px;
+        margin-top: 20px;
+        position: absolute;
+        font-size: 20px;
+        border-radius: 10px;
+        }
+        .paypal {
+        color: #0094c6;
+        background-color: #ffc520;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        padding: 10px 220px 10px 220px;
+        margin-top: 80px;
+        position: absolute;
+        font-size: 20px;
+        border-radius: 10px;
+        }
+        .description1 {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        font-size: 16px;
+        margin-top: 220px;
+        }
+        .container {
+        margin-top: 40px;
+
+        .benefits {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+            font-size: 18px;
+            margin-left: -13px;
+            cursor: pointer;
+        }
+        .benefits:hover {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+            font-size: 18px;
+            margin-left: -13px;
+            cursor: pointer;
+            color: #0094c6;
+        }
+        .specs {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+            margin-left: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .specs:hover {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+            margin-left: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #0094c6;
+        }
+        .active1 {
+            border: 1px solid #cecece;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+        }
+        .xs {
+        border: 1px solid #cecece;
+        width: 35%;
+        margin-left: 2px;
+        position: absolute;
+        margin-top: -17px;
+        }
+        .benefit__box {
+        position: absolute;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-left: 5px;
+        margin-top: 5px;
+        display: none;
+        }
+        .show {
+        display: block;
+        }
+    }
+    }
+    .section__2 {
+    border-top: 1px solid #cecece;
+    margin-top: 120px;
+
+    .section__2box {
+        margin-top: 30px;
+        height: 140px;
+        display: flex;
+    }
+    .rating {
+        margin-top: 10px;
+    }
+    .reviews {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    .smallbox__1 {
+        border-right: 1px solid #cecece;
+    }
+    .smallbox__2 {
+        margin-left: 20px;
+        border-right: 1px solid #cecece;
+        padding-right: 20px;
+        .raing__bar {
+        width: 150px;
+        height: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: yellow;
+        }
+        .rating {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-left: 10px;
+        margin-top: 5px;
+        }
+        .laylo {
+        margin-top: -20px;
+        }
+    }
+    .smallbox__3 {
+        margin-left: 20px;
+    }
+    .smallbox__4 {
+        margin-left: auto;
+        .write {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        border: 1px solid black;
+        margin-top: 8px;
+        margin-right: 20px;
+        padding: 6px;
+        border-radius: 5px;
+        }
+        .write:hover {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        margin-top: 8px;
+        margin-right: 20px;
+        padding: 6px;
+        border-radius: 5px;
+        }
+    }
+    }
+    .sectiom__3 {
+    border-top: 1px solid #cecece;
+    margin-top: 50px;
+    display: flex;
+    .review__1 {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width: 250px;
+        height: 100%;
+        border: 1px solid #cecece;
+            margin-left: 20px;
+        margin-top: 30px;
+        .review__image {
+        width: 100%;
+        height: 250px;
+        }
+        .comment {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-left: 5px;
+        font-size: 14px;
+        margin-top: -12px;
+        }
+        .country {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-left: 10px;
+        margin-top: -20px;
+        }
+        .coo {
+        margin-left: 10px;
+        margin-right: 5px;
+        }
+        .kus {
+        margin-left: 10px;
+        }
+    }
+    }
+    .upper__box {
+    margin-top: 100px;
+
+    width: 80%;
+    height: 2000px;
+    }
+    .waqa {
+    margin-bottom: -50px;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-weight: bold;
+    }
+    .pre-b {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    }

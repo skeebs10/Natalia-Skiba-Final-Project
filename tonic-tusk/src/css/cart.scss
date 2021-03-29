@@ -1,0 +1,102 @@
+.henj {
+    width: 80%;
+    margin-top: 100px;
+    .cart-title {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        font-weight: bold;
+    }
+    .cart-table {
+        margin-top: 50px;
+        .Roww__1 {
+        width: 650px !important;
+        }
+        .Roww__2 {
+        width: 150px !important;
+        }
+        .Roww__3 {
+        width: 80px;
+        }
+        .cart__image {
+        width: 120px;
+        }
+        .basal {
+        margin-left: 20px;
+        margin-top: 60px;
+        }
+        .pp {
+        margin-top: 60px !important;
+        position: absolute !important;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        font-size: 20px;
+        }
+        .cart__input {
+        width: 30px;
+        height: 30px;
+        margin-top: 60px;
+        padding-left: 8px;
+            }
+        .increment {
+        margin-top: 60px;
+        margin-right: 5px;
+        border: 1px solid #cecece;
+        padding: 2px 5px 2px 5px;
+            }
+        .decrement {
+        margin-top: 60px;
+        margin-left: 5px;
+        border: 1px solid #cecece;
+        padding: 2px 5px 2px 5px;
+        }
+    }
+    }
+    .checkout {
+    margin-left: auto;
+    width: 300px;
+    height: 300px;
+
+    margin-top: 20px;
+    .subtotal {
+        float: right;
+        font-size: 25px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    }
+    .subtotal2 {
+        float: right;
+        font-size: 18px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+        margin-top: -10px;
+    }
+    .check {
+        float: right;
+        color: white;
+        background-color: black;
+        padding: 8px 20px 8px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .check:hover {
+        float: right;
+        color: black;
+        background-color: white;
+        padding: 8px 20px 8px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid black;
+        text-decoration: none;
+    }
+    .subtotal23 {
+        float: right;
+        margin-top: 20px;
+        font-size: 23px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    }
+    .check2 {
+        float: right;
+        color: blue;
+        background-color: yellow;
+        padding: 8px 20px 8px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    }
+    }
