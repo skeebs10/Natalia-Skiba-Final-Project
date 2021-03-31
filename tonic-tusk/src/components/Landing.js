@@ -111,7 +111,7 @@ function Landing() {
                             to={`/product/${prod._id}`}
                             className="order__button"
                         >
-                            ORDER NOW
+                            PREORDER NOW
                         </NavLink>
                         <div className="d-flex justify-content-center">
                             <p className="payment">More Payment Options</p>
@@ -147,13 +147,13 @@ function Landing() {
         <div className="section5">
         <div className="sub_section1">
             <div className="d-flex justify-content-center">
-            <h1 className="title">OUR GOAL: MAKE A DiFFERENCE</h1>
+            <h1 className="title">OUR GOAL: MAKE A DIFFERENCE</h1>
             </div>
             <p className="description1">
             10% of every purchase is donated to the
             </p>
             <p className="description2">
-            ELEPHANT Crises fund | The Leonardo DiCaprio Foundation
+            Elephant Crises Fund | The Leonardo DiCaprio Foundation
             </p>
         </div>
         <div className="sub_section2">
