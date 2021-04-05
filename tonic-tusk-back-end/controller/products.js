@@ -1,13 +1,7 @@
 const Product = require("../Models/products");
 
 exports.createProduct = (req, res) => {
-    const { name, price, description, benefits, specs } = req.body;
-    let productImage = [];
-    if (req.files.length > 0) {
-    productImage = req.files.map((file) => {
-        return { img: "http://localhost:8000/public/" + file.filename };
-    });
-    }
+    const { name, price, description, benefits, specs, productImage } = req.body;
     if (!name || !productImage || !price || !description) {
     return res.status(200).json({
         message: "all fileds are required",
