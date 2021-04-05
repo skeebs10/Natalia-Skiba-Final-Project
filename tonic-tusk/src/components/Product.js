@@ -44,8 +44,9 @@ function Product() {
             price,
             quantity,
         };
-        dispatch(AddtonlCart(item));
-        history.push(`/cart/${user}`);
+        dispatch(AddtonlCart(item)).then((res) => {
+            history.push(`/cart/${user}`);
+        });
         } else if (user1) {
         const item = {
             user: user1,
@@ -53,8 +54,9 @@ function Product() {
             price,
             quantity,
         };
-        dispatch(AddtonlCart(item));
-        history.push(`/cart/${user1}`);
+        dispatch(AddtonlCart(item)).then((res) => {
+            history.push(`/cart/${user1}`);
+        });
         }
     } else if (token) {
         let userid = loginuser._id;
@@ -64,8 +66,9 @@ function Product() {
         price,
         quantity,
         };
-        dispatch(AddtolCart(item));
+        dispatch(AddtolCart(item)).then((res) => {
         history.push(`/cart/${loginuser}`);
+        });
     }
     };
   //main retrun function
@@ -81,8 +84,8 @@ function Product() {
                     return <img src={img.img} className="lk toggleIn"></img>;
                 }
                 })}
-                <div className="above_images">
-                {PbyID.product.productImage.map((img, index) => {
+                    <div className="above_images">
+                    {PbyID.product.productImage.map((img, index) => {
                     return (
                     <div className="below_images">
                         <img
@@ -157,7 +160,7 @@ function Product() {
                     </div>
                 </div>
                 ) : (
-                <div>
+                    <div>
                     <div className="benefit__box">
                     <pre className="pre-b">{PbyID.product.benefits}</pre>
                     </div>
@@ -322,7 +325,7 @@ function Product() {
             <div className="review__1">
                 <div className="d-flex mt-2 p-2">
                 <StarRatings
-                    ating={5}
+                    rating={5}
                     starDimension="20px"
                     starSpacing="2px"
                     starRatedColor="yellowgreen"
