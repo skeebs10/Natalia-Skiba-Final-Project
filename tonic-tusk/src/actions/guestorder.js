@@ -1,15 +1,15 @@
-import { AddtocartConstants } from "../actions/constants";
+import { GuestOrderConstants } from "../actions/constants";
 import axios from "axios";
-export const AddtonlCart = (item) => {
+export const Guestorder = (items) => {
     return async (dispatch) => {
-    dispatch({ type: AddtocartConstants.AddtocartRequest });
+    dispatch({ type: GuestOrderConstants.GuestOrderRequest });
     await axios
-        .post("http://localhost:8000/addtonlcart", { ...item })
+        .post("http://localhost:8000/guestorder", { ...items })
         .then((res) => {
         if (res.status === 201) {
-            onst { message } = res.data;
+            const { message } = res.data;
             dispatch({
-            type: AddtocartConstants.AddtocartSuccess,
+            type: GuestOrderConstants.GuestOrderSuccess,
             payload: {
                 message,
             },
@@ -17,7 +17,7 @@ export const AddtonlCart = (item) => {
         } else if (res.status === 200) {
             const { message } = res.data;
             dispatch({
-            type: AddtocartConstants.AddtocartFailure,
+            type: GuestOrderConstants.GuestOrderFailure,
             payload: {
                 message,
             },

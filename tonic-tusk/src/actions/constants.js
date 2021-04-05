@@ -48,7 +48,17 @@ const RegisterConstants = {
     RemovelitemRequest: "RemovelitemRequest",
     RemovelitemFailure: "RemovelitemFailure",
     };
-
+    const GuestOrderConstants = {
+    GuestOrderSuccess: "GuestOrderSuccess",
+    GuestOrderRequest: "GuestOrderRequest",
+    GuestOrderFailure: "GuestOrderFailure",
+    };
+    const OrderLoginConstants = {
+    OrderLoginSuccess: "OrderLoginSuccess",
+    OrderLoginRequest: "OrderLoginRequest",
+    OrderLoginFailure: "OrderLoginFailure",
+    };
+    
     export {
     RegisterConstants,
     LoginConstants,
@@ -60,4 +70,6 @@ const RegisterConstants = {
     GetlcartbyidConstants,
     RemovenlitemConstants,
     RemovelitemConstants,
+    GuestOrderConstants,
+    OrderLoginConstants,
     };
