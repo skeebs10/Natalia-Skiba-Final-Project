@@ -9,6 +9,8 @@ import lcartbyidReducer from "./lcartbyidReducer";
 import nlcartbyidReducer from "./nlcartbyidReducer";
 import removelitemReducer from "./removelitemReducer";
 import removenlitemReducer from "./removenlitemReducer";
+import guestorderReducer from "./guestorderReducer";
+import orderLoginReducer from "./orderLoginReducer";
 
 const RootReducer = combineReducers({
     user: userReducer,
@@ -21,6 +23,8 @@ const RootReducer = combineReducers({
     lCart: lcartbyidReducer,
     Removenl: removenlitemReducer,
     Remvovel: removelitemReducer,
+    GuestO: guestorderReducer,
+    orderL: orderLoginReducer,
 });
 
 export default RootReducer;
