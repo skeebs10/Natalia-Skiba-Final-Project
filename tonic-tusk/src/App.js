@@ -6,7 +6,7 @@ import GuestPayment from "./components/GuestPayment";
 import Landing from "./components/Landing";
 import Product from "./components/Product";
 import Shop from "./components/Shop";
-import Confirmation from "./components/OrderConfirmation";
+import Confirmation from "./components/orderConfirmation";
 
 function App() {
   return (

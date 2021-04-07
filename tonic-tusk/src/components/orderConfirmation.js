@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import "../css/confirmation.scss";
 
-function OrderConfirmation() {
+function Confirmation() {
     const { Oid } = useParams();
     return (
     <div>
@@ -33,4 +33,4 @@ function OrderConfirmation() {
     );
 }
 
-export default OrderConfirmation;
+export default Confirmation;

@@ -7,7 +7,7 @@ export const AddtonlCart = (item) => {
         .post("http://localhost:8000/addtonlcart", { ...item })
         .then((res) => {
         if (res.status === 201) {
-            onst { message } = res.data;
+            const { message } = res.data;
             dispatch({
             type: AddtocartConstants.AddtocartSuccess,
             payload: {

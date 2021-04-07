@@ -29,13 +29,13 @@ function Navbar() {
             <NavLink to="/shop" className="change lo">
             Shop
             </NavLink>
-            <NavLink to="/shop" className="change lo">
-            Our mission
+            <NavLink to="/about" className="change lo">
+            Our Mission
             </NavLink>
             <NavLink to="/shop" className="change lo">
             News
             </NavLink>
-            <NavLink to="/shop" className="change lo">
+            <NavLink to="/contact" className="change lo">
             Contact
             </NavLink>
         </div>
