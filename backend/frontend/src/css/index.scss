@@ -1,0 +1,110 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 70px;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    > img {
+        height: 100px;
+        margin-left: 20px;
+        position: absolute;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    > div {
+        display: flex;
+        margin-left: auto;
+        height: 100%;
+        width: 600px;
+
+        > div {
+        display: flex;
+        height: 100%;
+        width: 400px;
+        justify-content: space-around;
+
+        > h3 {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+            "Helvetica Neue";
+            font-size: 24px;
+            margin-top: 22px;
+        }
+        }
+        .icons {
+        width: 200px;
+        .search {
+            font-size: 28px;
+            margin-left: auto;
+            margin-right: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .cart {
+            font-size: 28px;
+            margin-top: 10px;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        }
+    }
+    }
+    .active {
+    background-color: #0094c6;
+    .change {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
+        font-size: 24px;
+
+        margin-top: 22px;
+        color: white;
+    }
+    .searxch {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid white;
+        padding-top: 10px;
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+    }
+    .searxch::placeholder {
+        color: white;
+    }
+    }
+    .lo {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
+    font-size: 22px;
+    margin-top: 20px;
+    color: black;
+    background: none;
+    }
+    .lo:hover {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
+    font-size: 22px;
+    margin-top: 20px;
+    color: black;
+    background: none;
+    text-decoration: none;
+    }
+    .searxch {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid blue;
+    padding-top: 10px;
+    background: transparent;
+    color: #0094c6;
+    margin-left: auto;
+    border-radius: 5px;
+    }
+    .searxch::placeholder {
+    color: #0094c6;
+    }
+    input:focus {
+    outline: none;
+    }
