@@ -9,8 +9,11 @@ import { ProductById } from "../actions/productbyid";
 import { nanoid } from "nanoid";
 import { AddtonlCart } from "../actions/addtocart";
 import { AddtolCart } from "../actions/addtologincart";
+import { Guestorder } from "../actions/guestorder";
+import Paypal from "./Paypal.";
 
 function Product() {
+    const tok = localStorage.getItem("token");
     const history = useHistory();
     const [clas, setclas] = useState("benefits");
   //for setting which picture is to show on large div
@@ -71,6 +74,47 @@ function Product() {
         });
     }
     };
+    let name = PbyID.product.name;
+    let quanity = quantity;
+  let total = quantity * price;
+    let products = {
+    name,
+    price,
+    quantity,
+    };
+    const paypalsuccess = (payment) => {
+    if (tok) {
+        const items = {
+        email: payment.email,
+        name: payment.address.recipient_name,
+        city: payment.address.city,
+        country: payment.address.country_code,
+        shippingAdress: `${payment.address.line1},${payment.address.city},${payment.address.country_code}`,
+        postalcode: payment.address.postal_code,
+        amountpayed: total,
+        carttype: "lcart",
+        products,
+        };
+        dispatch(Guestorder(items));
+    } else if (!tok) {
+        const items = {
+        email: payment.email,
+        name: payment.address.recipient_name,
+        city: payment.address.city,
+        country: payment.address.country_code,
+        shippingAdress: `${payment.address.line1},${payment.address.city},${payment.address.country_code}`,
+        postalcode: payment.address.postal_code,
+        amountpayed: total,
+        carttype: "nlcart",
+        products,
+        };
+        dispatch(Guestorder(items));
+    }
+    };
+    const GuestO = useSelector((state) => state.GuestO);
+    if (GuestO.message === "order placed successfuly") {
+    history.push("/confirmation");
+    }
   //main retrun function
     return (
     <div className="container-fluid m-0 p-0">
@@ -126,9 +170,9 @@ function Product() {
                 <p className="cart" onClick={AddtoCart}>
                 Add to Cart
                 </p>
-                <NavLink to="#" className="paypal">
-                Buy with Paypal
-                </NavLink>
+                <div style={{ marginTop: "100px" }}>
+                <Paypal toPay={total} paymentsuccess={paypalsuccess} />
+                </div>
                 <p className="description1">{PbyID.product.description}</p>
                 {clas === "benefits" ? (
                 <div className="d-flex container">

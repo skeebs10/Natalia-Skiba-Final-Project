@@ -8,6 +8,7 @@ import Product from "./components/Product";
 import Shop from "./components/Shop";
 import Confirmation from "./components/OrderConfirmation";
 import SearchResults from "./components/SearchResults";
+import News from "./components/News";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         ></Route>
         <Route path="/confirmation" component={Confirmation}></Route>
         <Route path="/searchproduct" component={SearchResults}></Route>
+        <Route path="/news" component={News}></Route>
       </Switch>
     </div>
   );

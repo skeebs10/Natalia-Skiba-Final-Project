@@ -99,7 +99,7 @@ function Landing() {
         <div className="cont">
         <div className="product__section">
             <div className="title">
-            <h1>#Trendy Products</h1>
+            <h1>SHOP TOP PRODUCTS</h1>
             </div>
             <div className="cont">
             <Slider {...setting}>
@@ -116,7 +116,7 @@ function Landing() {
                             <p className="product__quantity">1</p>
                         </div>
                         <div className="d-flex">
-                            <h6 className="quantity">Flavours</h6>
+                            <h6 className="quantity">Flavor</h6>
                             <p className="pepper">{prod.flavours}</p>
                         </div>
                         <NavLink
@@ -159,13 +159,10 @@ function Landing() {
         <div className="section5">
         <div className="sub_section1">
             <div className="d-flex justify-content-center">
-            <h1 className="title">OUR GOAL: MAKE A DiFFERENCE</h1>
+            <h1 className="title">OUR GOAL: MAKE A DIFFERENCE</h1>
             </div>
             <p className="description1">
-            10% of every purchase is donated to the
-            </p>
-            <p className="description2">
-            ELEPHANT Crises fund | The Leonardo DiCaprio Foundation
+            10% of all profits are donated to <a href = "https://www.savetheelephants.org/about-elephants-2-2/?gclid=CjwKCAjw9r-DBhBxEiwA9qYUpfX685vk8X9KKkkCtKMhywZRnJR33UQO1rHR_loowWZI95d12mcBmBoC56sQAvD_BwE">Save the Elephants</a> 
             </p>
         </div>
         <div className="sub_section2">

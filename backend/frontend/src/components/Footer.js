@@ -14,12 +14,12 @@ function Footer() {
                 <p className="footer__text">Our Story</p>
             </NavLink>
             <NavLink to="/contact">
-                <p className="footer__text">Contact</p>
+                <p className="footer__text">Wholesale</p>
             </NavLink>
             </div>
             <div className="box2">
             <NavLink to="#">
-                <p className="footer__text">facebook</p>
+                <p className="footer__text">Facebook</p>
             </NavLink>
             <NavLink to="#">
                 <p className="footer__text">Instagram</p>
