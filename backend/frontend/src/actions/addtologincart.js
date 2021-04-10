@@ -4,7 +4,7 @@ export const AddtolCart = (item) => {
     return async (dispatch) => {
     dispatch({ type: AddtoLogincartConstants.AddtoLogincartRequest });
     await axios
-        .post("http://localhost:8000/addtolcart", { ...item })
+        .post("/addtolcart", { ...item })
         .then((res) => {
         if (res.status === 201) {
             const { message } = res.data;

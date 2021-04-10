@@ -4,7 +4,7 @@ import Axios from "axios";
 export const Searchs = (query) => {
     return async (dispatch) => {
     dispatch({ type: SearchConstants.SearchRequest });
-    await Axios.get(`http://localhost:8000/searchproducts?query=${query}`).then(
+    await Axios.get(`/searchproducts?query=${query}`).then(
         (res) => {
         const { products } = res.data;
         if (res.status === 201) {

@@ -4,7 +4,7 @@ import Axios from "axios";
 export const ProductById = (PId) => {
     return async (dispatch) => {
     dispatch({ type: ProductbyIdConstants.ProductbyIdRequest });
-    await Axios.get(`http://localhost:8000/productbyId/${PId}`).then((res) => {
+    await Axios.get(`/productbyId/${PId}`).then((res) => {
         const { product } = res.data;
         if (res.status === 201) {
         dispatch({

@@ -4,7 +4,7 @@ import Axios from "axios";
 export const orderLogin = (user) => {
     return async (dispatch) => {
     dispatch({ type: OrderLoginConstants.OrderLoginRequest });
-    await Axios.post("http://localhost:8000/guestorderlogin", { ...user })
+    await Axios.post("/guestorderlogin", { ...user })
         .then((res) => {
         if (res.status === 201) {
             const { token, user, message } = res.data;

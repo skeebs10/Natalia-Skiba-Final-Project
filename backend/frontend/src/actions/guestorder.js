@@ -4,7 +4,7 @@ export const Guestorder = (items) => {
     return async (dispatch) => {
     dispatch({ type: GuestOrderConstants.GuestOrderRequest });
     await axios
-        .post("http://localhost:8000/guestorder", { ...items })
+        .post("/guestorder", { ...items })
         .then((res) => {
         if (res.status === 201) {
             const { message } = res.data;
