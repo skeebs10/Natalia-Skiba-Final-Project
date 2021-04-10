@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-    "sk_test_51IOInoJdyddb75kGO6iM2T5glxhKo5XDMB23LZjFqAcwrEjaOE12ACKcI5gqxFK8OUPXFZ074lfykPSthyWTB41T001xUP84vJ"
+    "sk_test_51IeVluIqkRLCNWCwh5aVRqBgI9ZvarQGeBc7ahqcgOlv4hjHCplBDDKjYY3khRlDB21zjWgzd9Nmu2uoMpY2UWCc00vNIiXZBV"
     );
     exports.guestP = (req, res) => {
     const { token, price } = req.body;

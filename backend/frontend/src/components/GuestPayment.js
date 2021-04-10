@@ -392,7 +392,7 @@ function GuestPayment() {
                     style={{ marginTop: "40px" }}
                     >
                     <StripeCheckout
-                        stripeKey="pk_test_51IOInoJdyddb75kGTxPJTz8BrrN8Wcr5CLKd8HiDZ8el0f32Tu6j6ieRWZEeseDxJf1xHBE6PWXF4FkVIsAITaXW00D69rmWFF"
+                        stripeKey="pk_test_51IeVluIqkRLCNWCwKhajK3LRnUOxosStA3FjisD3tr5RYMac7bgduOSqJI7jXCJpE7jJoIQLHIXRIddfS8hw56VA00xR2sRCPF"
                         token={makepayment}
                         name="buy"
                         amount={price * 100}
